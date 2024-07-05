@@ -1,128 +1,156 @@
-import React from 'react'
-import { Card, CardBody, CardTitle, CardSubtitle, Button, Row, Col } from 'reactstrap';
-import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import person from "./assets/person.png";
+import React from "react";
+import {
+  Card,
+  CardBody,
+  CardTitle,
+  CardSubtitle,
+  Button,
+  Row,
+  Col,
+} from "reactstrap";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import person from "./assets/p1.jpg";
 import { IoMdTime } from "react-icons/io";
-function interviewcard() {
+
+function InterviewCard() {
   return (
-//     <div style={{width:900}}>
+    <div style={{ width: 900, alignItems: "center" }}>
+      <Row>
+        <Col md="12">
+          <table
+            style={{
+              width: "100%",
+              textAlign: "center",
+              borderCollapse: "collapse",
+            }}
+          >
+            <tbody>
+              <tr>
+                <td
+                  colSpan="2"
+                  rowSpan="4"
+                  style={{
+                    textAlign: "center",
+                    border: "1px solid #80808042",
+                    padding: "20px",
+                  }}
+                >
+                  <img
+                    src={person}
+                    alt="Profile"
+                    className="rounded-circle img-fluid"
+                    style={{
+                      width: "100px",
+                      height: "100px",
+                      objectFit: "cover",
+                      border: "1px solid skyblue",
+                    }}
+                  />
+                  <CardTitle tag="h5" className="my-2">
+                    John Smith
+                  </CardTitle>
+                  <CardSubtitle className="my-2 text-muted">
+                    Senior Python Developer
+                  </CardSubtitle>
+                </td>
+                <td style={{ border: "1px solid #80808042" }}>
+                  <strong>1st Level:</strong> 7/10
+                </td>
+                <td style={{ border: "1px solid #80808042" }}>
+                  <strong>Interviewer:</strong> Stella
+                </td>
+              </tr>
 
-        
-//     <Card className="mb-4">
+              <tr colSpan="2">
+                <td style={{ border: "1px solid #80808042" }}>
+                  <strong>2nd Level:</strong> 6/10
+                </td>
+                <td style={{ border: "1px solid #80808042" }}>
+                  <strong>Interviewer:</strong> Smith
+                </td>
+              </tr>
 
+              <tr colSpan="2">
+                <td style={{ border: "1px solid #80808042" }}>
+                  <strong>3rd Level:</strong> Waiting
+                </td>
+                <td style={{ border: "1px solid #80808042" }}>
+                  <strong>Interviewer:</strong> <a href="#">Stephan</a>
+                </td>
+              </tr>
 
-      
-// <CardBody>
-//   <Row>
-//     <Col md="3" className="text-center">
-//       <img
-//         src={person} // Assuming you have a photo URL in your data
-     
-//         className="rounded-circle img-fluid"
-//         style={{ width: '100px', height: '100px' }}
-//       />
-//       <CardTitle tag="h5" className="mt-2">John Smith</CardTitle>
-//       <CardSubtitle className="mb-2 text-muted">Senior Python Developer</CardSubtitle>
-//       <div style={{display:'flex',flexDirection:'row',justifyContent:'space-evenly'}}>
-// <div > 
-     
-// <CalendarTodayIcon style={{color:'skyblue'}}/>
-// <p style={{color:'skyblue'}}>19 Feb 2024</p>
+              <tr colSpan="2">
+                <td style={{ border: "1px solid #80808042" }}>
+                  <strong>Meet Via:</strong> G-Meet
+                </td>
+                <td style={{ border: "1px solid #80808042" }}>
+                  <strong>Attendees:</strong> Johnson
+                </td>
+              </tr>
 
-
-// </div>
-// <div>
-     
-// <IoMdTime style={{color:'skyblue'}}/>
-// <p style={{color:'skyblue'}}>10:30 Am</p>
-
-
-// </div>
-
-// </div>
-//     </Col>
-//     <Col md="6">
-//       <Row>
-//         <Col><strong>1st Level:</strong> 7/10</Col>
-//         <Col><strong>Interviewer:</strong> Stella</Col>
-//       </Row>
-//       <Row>
-//         <Col><strong>2nd Level:</strong> 6/10</Col>
-//         <Col><strong>Interviewer:</strong> Smith</Col>
-//       </Row>
-//       <Row>
-//         <Col><strong>3rd Level:</strong>Waiting</Col>
-//         <Col><strong>Interviewer:</strong> <a href="#">Stephan</a></Col>
-//       </Row>
-//       <Row>
-//         <Col><strong>Meet Via:</strong>G-Meet</Col>
-//         <Col><strong>Attendees:</strong> Johnson</Col>
-        
-//       </Row>
-//       <Col md="12" className="text-center">
-    
-//     <Button color="primary" className="m-3">Join Meeting</Button>
-//     <Button color="secondary" className="m-3">Reschedule Meeting</Button>
-//   </Col>
-//     </Col>
-
-//   </Row>
-// </CardBody>
-
-// </Card>
-//     </div>
-<div style={{ width: 900,alignItems:'center' }}>
-<Card className="mb-4">
-  <CardBody>
-    <Row lg="12">
-      <Col md="3" className="text-center">
-        <img
-          src={person} // Assuming you have a photo URL in your data
-          alt="Profile"
-          className="rounded-circle img-fluid"
-          style={{ width: '100px', height: '100px' }}
-        />
-        <CardTitle tag="h5" className="mt-2">John Smith</CardTitle>
-        <CardSubtitle className="mb-2 text-muted">Senior Python Developer</CardSubtitle>
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly' }}>
-          <div>
-            <CalendarTodayIcon style={{ color: 'skyblue' }} />
-            <p style={{ color: 'skyblue' }}>19 Feb 2024</p>
-          </div>
-          <div>
-            <IoMdTime style={{ color: 'skyblue' }} />
-            <p style={{ color: 'skyblue' }}>10:30 AM</p>
-          </div>
-        </div>
-      </Col>
-      <Col md="6">
-        <Row className="bordered-row">
-          <Col><strong>1st Level:</strong> 7/10</Col>
-          <Col><strong>Interviewer:</strong> Stella</Col>
-        </Row>
-        <Row className="bordered-row">
-          <Col><strong>2nd Level:</strong> 6/10</Col>
-          <Col><strong>Interviewer:</strong> Smith</Col>
-        </Row>
-        <Row className="bordered-row">
-          <Col><strong>3rd Level:</strong> Waiting</Col>
-          <Col><strong>Interviewer:</strong> <a href="#">Stephan</a></Col>
-        </Row>
-        <Row className="bordered-row">
-          <Col><strong>Meet Via:</strong> G-Meet</Col>
-          <Col><strong>Attendees:</strong> Johnson</Col>
-        </Row>
-        <Col md="12" className="text-center">
-          <Button color="primary" className="m-3">Join Meeting</Button>
-          <Button color="secondary" className="m-3">Reschedule Meeting</Button>
+              <tr>
+                <td
+                  colSpan="1"
+                  style={{
+                    textAlign: "center",
+                    border: "1px solid #80808042",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <div>
+                      <CalendarTodayIcon style={{ color: "skyblue" }} />
+                      <p style={{ color: "skyblue" }}>19 Feb 2024</p>
+                    </div>
+                  </div>
+                </td>
+                <td
+                  colSpan="1"
+                  style={{
+                    textAlign: "center",
+                    border: "1px solid #80808042",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-evenly",
+                    }}
+                  >
+                    <div>
+                      <IoMdTime style={{ color: "skyblue" }} />
+                      <p style={{ color: "skyblue" }}>10:30 AM</p>
+                    </div>
+                  </div>
+                </td>
+                <td
+                  colSpan="2"
+                  rowSpan="2"
+                  style={{
+                    textAlign: "center",
+                    border: "1px solid #80808042",
+                  }}
+                >
+                  <Button color="primary" className="m-3">
+                    Join Meeting
+                  </Button>
+                  <Button color="secondary" className="m-3">
+                    Reschedule Meeting
+                  </Button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </Col>
-      </Col>
-    </Row>
-  </CardBody>
-</Card>
-</div>
-
-  )
+      </Row>
+    </div>
+  );
 }
 
-export default interviewcard
+export default InterviewCard;

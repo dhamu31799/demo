@@ -1,13 +1,14 @@
-import React,{useState} from 'react'
-import 'react-calendar/dist/Calendar.css';
-import Calendar from 'react-calendar';
+import React, { useState } from "react";
+import "react-calendar/dist/Calendar.css";
+import Calendar from "react-calendar";
+
 function Calender() {
-    const [value, setvalue] = useState(new Date())
+  const [value, setvalue] = useState(new Date());
   return (
     <div>
-    <Calendar  value={value} />
-  </div>
-  )
+      <Calendar value={value} />
+    </div>
+  );
 }
 
-export default Calender
+export default Calender;
