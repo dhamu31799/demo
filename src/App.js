@@ -1,13 +1,11 @@
 import Sidebar from "./sidebar";
 import Heder from "./Heder";
-import Chartvalue from "./Chartvalue";
-import Assignmetcard from "./Assignmetcard";
-import Interviewcard from "./Interviewcard";
+
 import Calender from "./Calender";
-import JobDashboard from "./JobCard";
+
 import Lists from "./lists";
-import Layout2 from "./Layout2";
-import Dashboard from "./components/Dashboard";
+
+
 import Header from "./components/Header";
 import ApplicationsChart from "./components/ApplicationsChart";
 import NewAssessments from "./components/NewAssessments";
@@ -17,21 +15,16 @@ import Hiringcandidate from './Hiringcandidate'
 import Task from "./Task"
 import Upcomingevent from "./Upcomingevent";
 import {
-  Card,
-  CardBody,
-  CardTitle,
-  CardSubtitle,
-  Button,
+
   Row,
   Col,
 } from "reactstrap";
 
 import {
-  CardContent,
+
   Stack,
   Typography,
-  Grid,
-  StackDivider,
+
   Paper,
 } from "@mui/material";
 
