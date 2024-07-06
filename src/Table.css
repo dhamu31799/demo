@@ -1,0 +1,13 @@
+.MuiButton-root {
+    text-transform: none;
+    font-size: 0.875rem;
+  }
+  
+  .MuiTableCell-root {
+    padding: 8px 16px;
+  }
+  
+  .MuiIconButton-root {
+    padding: 8px;
+  }
+  

@@ -12,6 +12,10 @@ import Header from "./components/Header";
 import ApplicationsChart from "./components/ApplicationsChart";
 import NewAssessments from "./components/NewAssessments";
 import InterviewCard from "./Interviewcard";
+import Tablevalue from "./Tablevalue";
+import Hiringcandidate from './Hiringcandidate'
+import Task from "./Task"
+import Upcomingevent from "./Upcomingevent";
 import {
   Card,
   CardBody,
@@ -54,7 +58,7 @@ function App() {
             </div>
           </div>
           <Row style={{ marginTop: "50px" }}>
-            <Col md="9">
+            <Col md="8">
               <Paper elevation={3} p={3}>
                 <Stack
                   justifyContent={"space-between"}
@@ -78,14 +82,19 @@ function App() {
                 >
                   <div style={{ display: "inline-block", marginRight: "20px" }}>
                     <InterviewCard />
+                
                   </div>
                   <div style={{ display: "inline-block", marginRight: "20px" }}>
                     <InterviewCard />
                   </div>
+            
                 </div>
               </Paper>
+
+              <Task/>
+              <Tablevalue/>
             </Col>
-            <Col md="3">
+            <Col md="4">
               <Paper
                 style={{  width: "100%" }}
                 elevation={3}
@@ -101,11 +110,14 @@ function App() {
                   sx={{ borderBottom: "1px solid lightgrey" }}
                 >
                   <Calender />
+                  <Upcomingevent/>
                   <Lists />
+                  <Hiringcandidate />
                 </Stack>
               </Paper>
             </Col>
           </Row>
+         
         </div>
       </div>
     </div>
